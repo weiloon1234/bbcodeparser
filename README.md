@@ -108,7 +108,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Joseph Landberg](https://github.com/weiloon1234)
+- [Joseph Landberg](https://github.com/golonka)
 - [All Contributors](../../contributors)
 
 ## License
