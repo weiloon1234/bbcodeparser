@@ -4,7 +4,7 @@ trait ArrayTrait
 {
 
     /**
-     * Filters all parsers that you don´t want
+     * Filters the parser list to only the given names.
      * @param array $parsers An array of all parsers
      * @param array $only Chosen parsers
      * @return array parsers
