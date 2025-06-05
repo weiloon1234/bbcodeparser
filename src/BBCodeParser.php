@@ -34,7 +34,7 @@ class BBCodeParser
             'content' => '$2'
         ],
         'color' => [
-            'pattern' => '/\[color\=(#[A-f0-9]{6}|#[A-f0-9]{3})\](.*?)\[\/color\]/s',
+            'pattern' => '/\[color\=(#[A-Fa-f0-9]{6}|#[A-Fa-f0-9]{3})\](.*?)\[\/color\]/s',
             'replace' => '<font color="$1">$2</font>',
             'content' => '$2'
         ],
