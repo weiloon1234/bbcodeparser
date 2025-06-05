@@ -1,30 +1,26 @@
 <?php
+namespace Weiloon1234\BBCode\Tests;
+
 use PHPUnit\Framework\TestCase;
 use Weiloon1234\BBCode\BBCodeParser;
 
-require_once __DIR__.'/../src/Traits/ArrayTrait.php';
-require_once __DIR__.'/../src/BBCodeParser.php';
-
 class BBCodeParserTest extends TestCase
 {
-    public function testBoldParsing()
+    public function testBoldTag()
     {
         $parser = new BBCodeParser();
-        $result = $parser->parse('[b]bold[/b]');
-        $this->assertEquals('<strong>bold</strong>', $result);
+        $this->assertSame('<strong>text</strong>', $parser->parse('[b]text[/b]'));
     }
 
-    public function testColorParsingLowercase()
+    public function testColorTagUppercase()
     {
         $parser = new BBCodeParser();
-        $result = $parser->parse('[color=#aabbcc]text[/color]');
-        $this->assertEquals('<font color="#aabbcc">text</font>', $result);
+        $this->assertSame('<font color="#FFAABB">text</font>', $parser->parse('[color=#FFAABB]text[/color]'));
     }
 
-    public function testColorParsingUppercase()
+    public function testColorTagLowercase()
     {
         $parser = new BBCodeParser();
-        $result = $parser->parse('[color=#AABBCC]text[/color]');
-        $this->assertEquals('<font color="#AABBCC">text</font>', $result);
+        $this->assertSame('<font color="#ffaabb">text</font>', $parser->parse('[color=#ffaabb]text[/color]'));
     }
 }
