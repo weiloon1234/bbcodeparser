@@ -22,5 +22,8 @@
     "autoload": {
         "psr-4": {"Weiloon1234\\BBCode\\": "src/"}
     },
+    "autoload-dev": {
+        "psr-4": {"Weiloon1234\\BBCode\\Tests\\": "tests/"}
+    },
     "minimum-stability": "stable"
 }
