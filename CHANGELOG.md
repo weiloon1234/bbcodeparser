@@ -45,7 +45,7 @@ All Notable changes to `weiloon1234\BBCodeParser` will be documented in this fil
 ## v1.3.0 - 2014-06-30
 
 ### Fixed
-- The only/except functionally have been broken since like 1.1, but now it´s working. Better late then never!
+- The only/except functionally have been broken since like 1.1, but now it´s working. Better late than never!
 
 ## v1.2.7 - 2014-05-19
 
